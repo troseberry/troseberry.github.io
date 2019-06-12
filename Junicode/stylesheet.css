@@ -132,6 +132,14 @@ body {
 	margin-bottom: 5%;
 }
 
+.portfolio-divider-sm{
+	border-width: 3px;
+	border-radius: 15px;
+	border-color: #BF7135;
+	margin-top: 0;
+	width: 85%;
+}
+
 .img-caption{
 	font-style: italic;
 }
