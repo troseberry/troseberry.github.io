@@ -52,7 +52,7 @@
 		</div>
   </div>
 	  
-  	<nav class="navbar navbar-expand-xl navbar-dark">
+  	<nav class="navbar sticky-top navbar-expand-xl navbar-dark shadow">
 		<div class="container">
 		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		  		<span class="navbar-toggler-icon"></span>
@@ -69,8 +69,8 @@
 								<a class="nav-link nav-dropdown" href="IndividualProjects.html" style="white-space: nowrap">INDIVIDUAL PROJECTS<span class="sr-only">(current)</span></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 								  <a class="dropdown-item" href="Portfolio_McConnellManor.html">McConnell Manor</a>
+								  <a class="dropdown-item" href="Portfolio_DesertTemple.html">Desert Temple</a>
 								  <a class="dropdown-item" href="Portfolio_DotsLines.html">Dots & Lines</a>
-								  <a class="dropdown-item" href="Portfolio_DesertTemple">Desert Temple</a>
 								</div>
 							  </li>
 							
@@ -79,8 +79,8 @@
 							  	<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 								  <a class="dropdown-item" href="Portfolio_GoGoKarts.html">Go Go-Karts</a>
 								  <a class="dropdown-item" href="Portfolio_Voyage.html">Voyage</a>
-								  <a class="dropdown-item" href="Portfolio_LostDoors.html">Lost Doors</a>
 								  <a class="dropdown-item" href="Portfolio_Visions.html">Visions</a>
+								  <a class="dropdown-item" href="Portfolio_LostDoors.html">Lost Doors</a>
 								</div>
 							  </li>
 							
@@ -121,26 +121,59 @@
 <section>
   <div class="container">
 	<div class="row">
+<!--
 		<div class="col-12 col-md-1">
 		</div>
-		<div class="col-12 col-md-10">
+-->
+		<div class="col-md-12">
 			
 			<div class="row pt-2 pb-2">
-			  <div class="col-12 text-center">
-				<div class="portfolio-box">
-					<img class="img-fluid portfolio-img" src="images/Previews/Long/McConnellManor.png" alt="">
-					<button class="portfolio-btn" onclick="window.location.href = 'TechDeepDive_McConnellManor.html';">MCCONNELL MANOR</button>
-				  </div>
+			  	<div class="col-md-8 text-center">
+					<div class="portfolio-box">
+						<a href="TechDeepDive_McConnellManor.html">
+							<img class="img-fluid portfolio-img" src="images/Previews/Marketing/McConnellManorTech.jpg" alt="">
+						</a>
+						<button class="project-btn" onclick="window.location.href = 'TechDeepDive_McConnellManor.html';">MCCONNELL MANOR</button>
+				  	</div>
+				</div>
+				
+				<div class="col-12 col-md-4 page-container mt-2" style="outline: 8px solid #2A3B56; padding-bottom: 23%">
+					<h4 class="primary-color text-center"> Deep Dive Topics</h4>
+					<ul>
+						<li>
+							<h5>The Memento Puzzle</h5>
+						</li>
+						<li>
+							<h5>Conversing With a Non-Visible NPC</h5>
+						</li>
+					</ul>
 				</div>
 			</div>
 			
 			<div class="row pt-2 pb-2">
-			  <div class="col-12 text-center">
-				<div class="portfolio-box">
-						<img class="img-fluid" src="images/Previews/Long/GoGoKarts.png" alt="" >
-						<button class="portfolio-btn" onclick="window.location.href = 'TechDeepDive_GoGoKarts.html';">GO GO-KARTS</button>
+			  	<div class="col-md-8 text-center">
+					<div class="portfolio-box">
+							<a href="TechDeepDive_GoGoKarts.html">
+								<img class="img-fluid" src="images/Previews/Marketing/GoGoKartsTech.png" alt="" >
+							</a>
+							<button class="project-btn" onclick="window.location.href = 'TechDeepDive_GoGoKarts.html';">GO GO-KARTS</button>
+					</div>
+				  </div>
+				
+				<div class="col-12 col-md-4 page-container mt-2" style="outline: 8px solid #2A3B56; padding-bottom: 20.5%">
+					<h4 class="primary-color text-center"> Deep Dive Topics</h4>
+					<ul>
+						<li>
+							<h5>The Swinging Pirate Ship Obstacle</h5>
+						</li>
+						<li>
+							<h5>Creating AI Paths for Race Tracks</h5>
+						</li>
+						<li>
+							<h5>Implementing Race Logic Systems</h5>
+						</li>
+					</ul>
 				</div>
-			  </div>
 			</div>
 			
 		</div>
@@ -150,7 +183,7 @@
   </div>
 </section>
 	  
-<section class="mt-4"> </section>
+<section class="mt-4" style="padding-bottom: 50px"> </section>
 <footer class="text-center fixed-bottom" style="background-color: #272727;">
   <div class="container">
         <div class="row">

@@ -3,6 +3,7 @@
 function VoyageScriptingButtonClick() {
 	
 	if (document.getElementById("scripting-button").className == 'default-btn'){
+		
 		document.getElementById("voyage-scripting").style.display = 'block';
 		document.getElementById("voyage-leveldesign").style.display = 'none';
 	

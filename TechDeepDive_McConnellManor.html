@@ -52,7 +52,7 @@
 		</div>
   </div>
 	  
-  	<nav class="navbar navbar-expand-xl navbar-dark">
+  	<nav class="navbar sticky-top navbar-expand-xl navbar-dark shadow">
 		<div class="container">
 		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		  		<span class="navbar-toggler-icon"></span>
@@ -69,8 +69,8 @@
 								<a class="nav-link nav-dropdown" href="IndividualProjects.html" style="white-space: nowrap">INDIVIDUAL PROJECTS<span class="sr-only">(current)</span></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 								  <a class="dropdown-item" href="Portfolio_McConnellManor.html">McConnell Manor</a>
+								  <a class="dropdown-item" href="Portfolio_DesertTemple.html">Desert Temple</a>
 								  <a class="dropdown-item" href="Portfolio_DotsLines.html">Dots & Lines</a>
-								  <a class="dropdown-item" href="Portfolio_DesertTemple">Desert Temple</a>
 								</div>
 							  </li>
 							
@@ -79,8 +79,8 @@
 							  	<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 								  <a class="dropdown-item" href="Portfolio_GoGoKarts.html">Go Go-Karts</a>
 								  <a class="dropdown-item" href="Portfolio_Voyage.html">Voyage</a>
-								  <a class="dropdown-item" href="Portfolio_LostDoors.html">Lost Doors</a>
 								  <a class="dropdown-item" href="Portfolio_Visions.html">Visions</a>
+								  <a class="dropdown-item" href="Portfolio_LostDoors.html">Lost Doors</a>
 								</div>
 							  </li>
 							
@@ -106,123 +106,124 @@
 		</div>
       
   </nav>
-  <section class="mt-4"> </section>
+<!--  <section class="mt-4"> </section>-->
 
-<section>
-  <div class="container">
-	  <div class="row">
-	  	<div class="col-12 col-md-1"></div>
-		  
-		  
-		  <!-- GAME CONTENT -->
-	  	<div class="col-12 col-md-10">
-	  	  <h1 class="page-header mb-2">MCCONNELL MANOR - TECHNICAL DEEP DIVES</h1>
-	  		
-			<div class="container section-container pb-1"  id="memento_tech_deepdive">
-				<h3 class="text-center">The Memento Puzzle</h3>
+<section style="padding-bottom: 50px">
+  <div class="row">
+	<div class="col-12 col-md-2"></div>
+	<div class="col-12 col-md-8">
+		<div class="row">
+			<div class="col-12 col-md-1"></div>
+			  <!-- GAME CONTENT -->
+			<div class="col-12 col-md-10 page-container">
+			  <h1 class="page-header mb-2">MCCONNELL MANOR - TECHNICAL DEEP DIVES</h1>
 
-				<!-- Memento Puzzle -->
-				<div class="container">
-					<div class="row mt-4">
-						<div class="col-12">
-							<h5>Background</h5>
-							<div class="row">
-								<div class="col-12 col-md-5">
-									<p class="mt-2">
-										The secondary quest the player must complete during the "McConnell Manor" quest is a quest called "Ghost, Interrupted". In this quest, the player must assist a ghost named Jedediah by returning three specific items to 3 different dressers.
-									</p>
-									<p>
-										It is essentially a puzzle where the player must determine which item belongs in which dreser based on different clues they find in the manor. There is only one correct combination and the player must determine it to move forward with the quest.
-									</p>
-								</div>
-								
-								<div class="col-12 col-md-7 mt-3">
-									<div class="embed-responsive embed-responsive-16by9">
-										<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/r9EFxhs3xmY" frameborder="0" allowfullscreen></iframe>
+				<div class="container section-container pb-1"  id="memento_tech_deepdive">
+					<h3 class="text-center">The Memento Puzzle</h3>
+
+					<!-- Memento Puzzle -->
+					<div class="container">
+						<div class="row mt-4">
+							<div class="col-12">
+								<h5>Background</h5>
+								<div class="row">
+									<div class="col-12 col-md-5">
+										<p class="mt-2">
+											The secondary quest the player must complete during the "McConnell Manor" quest is a quest called "Ghost, Interrupted". In this quest, the player must assist a ghost named Jedediah by returning three specific items to 3 different dressers.
+										</p>
+										<p>
+											It is essentially a puzzle where the player must determine which item belongs in which dreser based on different clues they find in the manor. There is only one correct combination and the player must determine it to move forward with the quest.
+										</p>
+									</div>
+
+									<div class="col-12 col-md-7 mt-3">
+										<div class="embed-responsive embed-responsive-16by9">
+											<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/r9EFxhs3xmY" frameborder="0" allowfullscreen></iframe>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					
-					<div class="row mt-4">
-					  <div class="col-12">
-						<h6 class="font-italic">Initial Implementation</h6>
-						<p>
-							  First, I tried having the containers check their inventory when the player talks to Jed. With this implementation, I tried to have references to the three unique containers (dressers) in the condition for the option to tell Jedediah that the player had returned all the items correctly. This check would look at each container, have the container go through its inventory, check if it contained the specific item it was supposed to, make sure all three container had their items, and then Jedediah would tell the player whether they were correct or not.
-							</p> 
-						</div>
-					</div>
-					
-					<div class="row mt-4">
-						<div class="col-12 col-md-3">
-							<h6 class="font-italic">Working Solution</h6>
-							<p>
-								In the end, it made more sense that each item would hold a reference to the container it was supposed to be in. When the item changed containers, it would check if the new container was the correct one. 
-							</p>
-							
-							<p>
-								To accomplish this, I created a script that attached to the different items. 
-							</p>
-							
-						</div>
-						<div class="col-12 col-md-9">
-							<figure>
-							  <img class="img-fluid" src="images/TechDeepDives/McConnellManor/Roseberry_ContainerItemCheck_PropertiesExample.PNG" alt="">
-							  <figcaption class="text-center font-italic" style="font-size: 12px">properties on script for Ann's memento</figcaption>
-							</figure>
-						</div>
-					</div>
-					
-					<div class="row">
-						<div class="col-12">
-							<p>
-								The user supplies two properties for the script: a global variable reference that tracks if the object is correctly placed and an object reference for the correct destination container.
-							</p>
-						</div>
-					</div>
-					
-					<div class="row">
-						<div class="col-12 text-center">
-							<figure>
-							  <img class="img-fluid" src="images/TechDeepDives/McConnellManor/Roseberry_ContainerItemCheck_Script.PNG" alt="">
-							  <figcaption class="text-center font-italic" style="font-size: 12px">script that checks if item is in the right dresser</figcaption>
-							</figure>
-						</div>
-					</div>
-					
-					<div class="row">
-						<div class="col-12">
-							<p>
-								If it was correct, it would set that global variable to 1 (for true). If it was incorrect, it would set it to 0 (for false). Then in the conditions for the conversation where Jedediah tells the player they’ve correctly placed all the items; it would just check that those three global variables were all 1. Otherwise, it would not play that conversation.
-							</p>
-						</div>
-					</div>
 
-					<div class="row">
-						<div class="col-12 text-center">
-							<figure>
-							  <img class="img-fluid" src="images/TechDeepDives/McConnellManor/Roseberry_ContainerItemCheck_SceneImplementation.PNG" alt="">
-							  <figcaption class="text-center font-italic" style="font-size: 12px">implementation in the dialogue conditions view</figcaption>
-							</figure>
+						<div class="row mt-4">
+						  <div class="col-12">
+							<h6 class="font-italic">Initial Implementation</h6>
+							<p>
+								  First, I tried having the containers check their inventory when the player talks to Jed. With this implementation, I tried to have references to the three unique containers (dressers) in the condition for the option to tell Jedediah that the player had returned all the items correctly. This check would look at each container, have the container go through its inventory, check if it contained the specific item it was supposed to, make sure all three container had their items, and then Jedediah would tell the player whether they were correct or not.
+								</p> 
+							</div>
+						</div>
+
+						<div class="row mt-4">
+							<div class="col-12 col-md-3">
+								<h6 class="font-italic">Working Solution</h6>
+								<p>
+									In the end, it made more sense that each item would hold a reference to the container it was supposed to be in. When the item changed containers, it would check if the new container was the correct one. 
+								</p>
+
+								<p>
+									To accomplish this, I created a script that attached to the different items. 
+								</p>
+
+							</div>
+							<div class="col-12 col-md-9">
+								<figure>
+								  <img class="img-fluid" src="images/TechDeepDives/McConnellManor/Roseberry_ContainerItemCheck_PropertiesExample.PNG" alt="">
+								  <figcaption class="text-center font-italic" style="font-size: 12px">properties on script for Ann's memento</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12">
+								<p>
+									The user supplies two properties for the script: a global variable reference that tracks if the object is correctly placed and an object reference for the correct destination container.
+								</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 text-center">
+								<figure>
+								  <img class="img-fluid" src="images/TechDeepDives/McConnellManor/Roseberry_ContainerItemCheck_Script.PNG" alt="">
+								  <figcaption class="text-center font-italic" style="font-size: 12px">script that checks if item is in the right dresser</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12">
+								<p>
+									If it was correct, it would set that global variable to 1 (for true). If it was incorrect, it would set it to 0 (for false). Then in the conditions for the conversation where Jedediah tells the player they’ve correctly placed all the items; it would just check that those three global variables were all 1. Otherwise, it would not play that conversation.
+								</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 text-center">
+								<figure>
+								  <img class="img-fluid" src="images/TechDeepDives/McConnellManor/Roseberry_ContainerItemCheck_SceneImplementation.PNG" alt="">
+								  <figcaption class="text-center font-italic" style="font-size: 12px">implementation in the dialogue conditions view</figcaption>
+								</figure>
+							</div>
 						</div>
 					</div>
-			  	</div>
-		  	</div>
-			
-			<div class="container section-container pb-3"  id="nonvisible_tech_deepdive">
-			  <h3 class="text-center">Conversing With a Non-Visible NPC</h3>
-				
+				</div>
+
+		<!--
+				<div class="container section-container pb-3"  id="nonvisible_tech_deepdive">
+				  <h3 class="text-center">Conversing With a Non-Visible NPC</h3>
+				</div>
+		-->
 			</div>
-	  	</div>
-		<!-- END GAME CONTENT -->
-		  
-		  
-	  	<div class="col-12 col-md-2"></div>
-	  </div>
+			<!-- END GAME CONTENT -->
+		</div>
+	</div>
+
+	<div class="col-12 col-md-2"></div>
   </div>
 </section>
-<section class="mt-4" style="padding-bottom: 50px"> </section>
+<!--<section class="mt-4" style="padding-bottom: 50px"> </section>-->
 <footer class="text-center" style="background-color: #272727; height: 50px; margin-top: -50px">
   <div class="container">
         <div class="row">

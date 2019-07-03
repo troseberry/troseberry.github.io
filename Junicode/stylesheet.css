@@ -14,9 +14,22 @@ body {
 /*	background-color: #e6dbc9;*/
 /*	background-color: #F1F2EB;*/
 /*	background-color: #EDEDED;*/
-	background-color: #FCF3ED;
+/*	background-color: #FCF3ED;*/
+/*	background-color: #f0f0f0;*/
+	background-color: #f7f7f7;
 }
 
+.primary-color{
+	color: #BF7135;
+}
+
+.secondary-color{
+	color: #265888; 
+}
+
+.tertiary-color{
+	color: #2A3B56;
+}
 
 .brand-header{
  	background-color: #265888; 
@@ -45,14 +58,17 @@ body {
 
 .dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 0;
+    margin-top: 0px;
 	padding: 0;
-	border-radius: 0;
-	border-color: #2A3B56;
+	border-top: 5px solid #2A3B56;
+	border-left: 5px solid white;
+	border-bottom: 5px solid white;
+	border-right: 5px solid white;
  }
 
 .dropdown-menu{
 	background-color: #2A3B56;
+	
 }
 
 .dropdown-item{
@@ -70,7 +86,8 @@ body {
 /*	color: #CEB146;*/
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 	font-style: normal;
-	font-size: 28pt;
+	font-size: 32pt;
+	font-weight: bold;
 }
 
 .header-sub-title{
@@ -81,7 +98,7 @@ body {
 	font-size: 18pt;
 	text-align: right;
 	padding: 0;
-	margin-top: 10px;
+	margin-top: 15px;
 }
 
 .header-nav-text{
@@ -94,14 +111,21 @@ body {
 .page-header{
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 	font-style: normal;
-	font-size: 26px;
+	font-size: 42px;
 	color: #BF7135;
-/*	color: #c53211;*/
-/*	color: #CEB146;*/
-/*	color: #C42B37;*/
 	font-weight: bold;
 	margin-top: 20px;
 	text-align: center;
+}
+
+.resume-section-header{
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-style: normal;
+	font-size: 26px;
+	color: #BF7135;
+	font-weight: bold;
+	margin-top: 20px;
+/*	text-align: center;*/
 }
 
 
@@ -115,6 +139,7 @@ body {
 	position: relative;
 	top: 0;
 	left: 0;
+/*	box-shadow: -10px 10px rgba(50,50,50,1);*/
 }
 
 .portfolio-btn{
@@ -124,33 +149,63 @@ body {
 	height: 15%;
 	width: 25%;
 	border: none;
+	border-radius: 5px;
 	text-align: center;
-	font-size: 18px;
+	font-size: 22px;
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 	font-weight: bold;
 	background-color: white;
-/*	background-color: #e6dbc9;*/
 	color: #BF7135;
-/*	color: #c53211;*/
-/*	color: #CEB146;*/
-/*	color: #C42B37;*/
 	transition: 0.3s;
 }
 
 .portfolio-btn:hover {
 	background-color:#BF7135;
-/*	background-color: #C42B37;*/
 	color: white;
 }
 
-.portfolio-divider{
+
+.project-btn{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	border: none;
+	text-align: center;
+	font-size: 36px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-weight: bold;
+	background-color:rgba(255,255,255,0);
+	color: #BF7135;
+	transition: 0.3s;
+	text-shadow: 1px 1px 2px black;
+}
+
+.project-btn:hover {
+	background-color:rgba(255,255,255,0.5);
+	color: #BF7135;
+}
+
+.first-portfolio-divider{
 	border-width: 5px;
 	border-radius: 15px;
+	border-color: #265888;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: -3%;
+	margin-bottom: 5%;
+}
+
+
+.portfolio-divider{
+	border-width: 2px;
+/*	border-radius: 15px;*/
 /*	border-color: #2A3B56;*/
 	border-color: #BF7135;
 /*	border-color: #C42B37;*/
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 5%;
+	margin-right: 5%;
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
@@ -163,15 +218,20 @@ body {
 	width: 85%;
 }
 
+.resume-divider{
+	border-color: #BF7135;
+}
+
+
 .img-caption{
 	font-style: italic;
 }
 
 
 .default-btn{
-	
+	border-radius: 5px;
 	text-align: center;
-	font-size: 14px;
+	font-size: 22px;
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 	background-color: white;
 	color: #BF7135;
@@ -184,9 +244,9 @@ body {
 }
 
 .default-btn-active{
-	
+	border-radius: 5px;
 	text-align: center;
-	font-size: 14px;
+	font-size: 22px;
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 	background-color: #BF7135;
 	color: white;
@@ -194,12 +254,13 @@ body {
 }
 
 .fa{
-  	padding: 20px  5px 20px 5px;
+  	padding: 10px ;
   	text-align: center;
   	text-decoration: none;
-  	margin: 5px 2px;
+  	margin: 20px 2px;
 /*	color: #BF7135;*/
 	color: white;
+	border-radius: 3px;
 }
 
 
@@ -209,14 +270,22 @@ body {
 	color: #BF7135;
 }
 
-.section-container{
+.page-container{
 	background-color: #265888;
-/*	background-color: #C42B37;*/
 	color: white;
+}
+
+.section-container{
+/*	background-color: #265888;*/
+/*	background-color: #C42B37;*/
+/*	color: white;*/
 	padding-top: 15px;
+/*	margin-top: 150px;*/
 	margin-bottom: 25px;
 	border-radius: 10px;
 }
+
+
 
 .vertical-center {
   min-height: 50%;  /* Fallback for browsers do NOT support vh unit */
@@ -225,6 +294,17 @@ body {
   display: flex;
   align-items: center;
 }
+
+
+.nav-pills >li > a{
+	color: #BF7135;
+}
+
+.nav-pills > li > a.active{
+	background-color: #BF7135 !important;
+}
+
+
 
 #voyage-leveldesign{
 	display: none;
@@ -236,5 +316,9 @@ body {
 }
 
 #visions-programming{
+	display: none;
+}
+
+#ggk-leadership{
 	display: none;
 }
