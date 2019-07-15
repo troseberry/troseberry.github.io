@@ -180,14 +180,14 @@ footer {
 	font-size: 22px;
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 	font-weight: bold;
-	background-color: white;
-	color: #BF7135;
+	background-color:#BF7135;
+	color: white;
 	transition: 0.3s;
 }
 
 .portfolio-btn:hover {
-	background-color:#BF7135;
-	color: white;
+	background-color: white;
+	color: #BF7135;
 }
 
 /*
