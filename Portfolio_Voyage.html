@@ -15,7 +15,7 @@
   	<script src="js/voyage-portfolio.js"></script>
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#VoyageScrollSpy" data-offset="100">
     <div class="brand-header">
 		<div class="container">
 			<div class="row">
@@ -43,10 +43,12 @@
 					  <a class="fa fa-linkedin fa-2x" href="http://www.linkedin.com/in/tayroseberry" target="_blank">
 					  </a>
 					</li>
+<!--
 					<li class="list-inline-item">
 					  <a class="fa fa-gamepad fa-2x" href="https://thatbanjobear.itch.io/" target="_blank">
 					  </a>
 					</li>
+-->
 				  </ul>
 			</div>
 		</div>
@@ -70,8 +72,10 @@
 								<a class="nav-link nav-dropdown" href="IndividualProjects.html" style="white-space: nowrap">INDIVIDUAL PROJECTS<span class="sr-only">(current)</span></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 								  <a class="dropdown-item" href="Portfolio_McConnellManor.html">McConnell Manor</a>
+<!--
 								  <a class="dropdown-item" href="Portfolio_DesertTemple.html">Desert Temple</a>
 								  <a class="dropdown-item" href="Portfolio_DotsLines.html">Dots & Lines</a>
+-->
 								</div>
 							  </li>
 							
@@ -80,8 +84,10 @@
 							  	<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 								  <a class="dropdown-item" href="Portfolio_GoGoKarts.html">Go Go-Karts</a>
 								  <a class="dropdown-item" href="Portfolio_Voyage.html">Voyage</a>
+<!--
 								  <a class="dropdown-item" href="Portfolio_Visions.html">Visions</a>
 								  <a class="dropdown-item" href="Portfolio_LostDoors.html">Lost Doors</a>
+-->
 								</div>
 							  </li>
 							
@@ -89,7 +95,7 @@
 								<a class="nav-link nav-dropdown" href="TechnicalDeepDives.html" >TECH DEEP DIVES<span class="sr-only">(current)</span></a>
 							  	<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 								  <a class="dropdown-item" href="TechDeepDive_McConnellManor.html">McConnell Manor</a>
-								  <a class="dropdown-item" href="TechDeepDive_GoGoKarts.html">Go Go-Karts</a>
+<!--								  <a class="dropdown-item" href="TechDeepDive_GoGoKarts.html">Go Go-Karts</a>-->
 								</div>
 							  </li>
 							
@@ -107,256 +113,425 @@
 		</div>
       
   </nav>
-<!--  <section class="mt-4"> </section>-->
 
 <section style="padding-bottom: 50px">
-  <div class="container page-container">
-	  <div class="row">
-	  	<div class="col-12 col-md-1"></div>
-		  
-		  
-		  <!-- GAME CONTENT -->
-	  	<div class="col-12 col-md-10">
-	  	  <h1 class="page-header mb-2">VOYAGE</h1>
-			
-			<hr class="first-portfolio-divider">
-	  	  <div class="container section-container">
-			  <div class="row ml-2 mr-2" >
-				  
+	<div class="row">
+		<div class="col-12 col-md-2"></div>
+		<div class="col-12 col-md-8">
+			<div class="row">
+				<div class="col-12 col-md-1"></div>
 				
-				<div class="col-12 col-md-5">
-					<h5 class="mb-3">Project Overview</h5>
-					<div class="row">
-						<div class="col-12 col-md-6">
-							<p class=" mt-0 mb-0" style="font-weight: bold">Project Duration:</p>
+				<!-- GAME CONTENT -->
+				<div class="col-12 col-md-10 page-container">
+			  		<h1 class="page-header mb-2">VOYAGE</h1>
+
+					<hr class="first-portfolio-divider" id="ProjectOverview">
+				  	<div class="container section-container">
+					  <div class="row ml-2 mr-2" >
+
+
+						<div class="col-12 col-md-4">
+							<h5 class="mb-3">Project Overview</h5>
+							<div class="row">
+								<div class="col-12 col-md-6">
+									<p class=" mt-0 mb-0" style="font-weight: bold">Project Duration:</p>
+								</div>
+								<div class="col-12 col-md-6">
+									<p class=" mt-0 mb-0">10 Weeks (150 Hours)</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-md-6">
+									<p class=" mt-0 mb-0" style="font-weight: bold">Team Size:</p>
+								</div>
+								<div class="col-12 col-md-6">
+								  <p class=" mt-0 mb-0">5</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-md-6">
+									<p class=" mt-0 mb-0" style="font-weight: bold">Engine:</p>
+								</div>
+								<div class="col-12 col-md-6">
+								  <p class=" mt-0 mb-0">Unity 2018</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-md-6">
+									<p class=" mt-0 mb-0" style="font-weight: bold">Language Used:</p>
+								</div>
+								<div class="col-12 col-md-6">
+								  <p class=" mt-0 mb-0">C#</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-md-6">
+									<p class=" mt-0 mb-0" style="font-weight: bold">Role(s):</p>
+								</div>
+								<div class="col-12 col-md-6">
+								  <p class=" mt-0 mb-0">Level Designer</p>
+								  <p class=" mt-0 mb-0">C# Programmer</p>
+								</div>
+							  </div>
+							  <div class="row">
+								<p class="ml-2 mr-2 mt-4"><i>Voyage</i> is a 2D physics-based action adventure game where the player controls a ship travelling through mysterious caves. They must utilize a harpoon gun to defend their ship from enemies and rescue their kidnapped crew members along the way.</p>
+							</div>
 						</div>
-						<div class="col-12 col-md-6">
-							<p class=" mt-0 mb-0">10 Weeks</p>
+						<div class="col-12 col-md-8">
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GE_7spwRWSw" frameborder="0" allowfullscreen></iframe>
+							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-12 col-md-6">
-							<p class=" mt-0 mb-0" style="font-weight: bold">Team Size:</p>
-						</div>
-						<div class="col-12 col-md-6">
-						  <p class=" mt-0 mb-0">5</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-12 col-md-6">
-							<p class=" mt-0 mb-0" style="font-weight: bold">Engine:</p>
-						</div>
-						<div class="col-12 col-md-6">
-						  <p class=" mt-0 mb-0">Unity 2018</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-12 col-md-6">
-							<p class=" mt-0 mb-0" style="font-weight: bold">Language Used:</p>
-						</div>
-						<div class="col-12 col-md-6">
-						  <p class=" mt-0 mb-0">C#</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-12 col-md-6">
-							<p class=" mt-0 mb-0" style="font-weight: bold">Role(s):</p>
-						</div>
-						<div class="col-12 col-md-6">
-						  <p class=" mt-0 mb-0">Level Designer</p>
-						  <p class=" mt-0 mb-0">C# Programmer</p>
-						</div>
 					  </div>
-					  <div class="row">
-						<p class="ml-2 mr-2 mt-3">Voyage is a 2D physics-based action adventure game where the player controls a ship travelling through mysterious caves. They must utilize a harpoon gun to defend their ship from enemies and rescue their kidnapped crew members along the way.</p>
-					</div>
-				</div>
-				<div class="col-12 col-md-7">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GE_7spwRWSw" frameborder="0" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-			  </div>
-			
-			<hr class="portfolio-divider">
-			<div class="container section-container">
-				<h3 class="text-center" >Roles & Responsibilities</h3>
-				<div class="row mt-2">
-					<div class="col-12 col-md-6">
-					  <h5 class="text-center">C# Programmer</h5>
-					  <ul>
-						<li>Scripted Audio Settings functionality which allowed players to mute both music and sound effects separately</li>
-						<li>Implemented Pause Menu assets and scripted their functionality</li>
-						<li>Implemented Credits Screen assets and scripted the functionality for scrolling credits</li>
-						<li>Implemented sound effects</li>
-						<li>Implemented sprite animations for ghost sailors and enemy deaths</li>
-					  </ul>
-					</div>
-					<div class="col-12 col-md-6">
-					  <h5 class="text-center">Level Designer</h5>
-					  <ul>
-						<li>Designed & Implemented the Tutorial Level</li>
-						<ul>
-							<li>Designed & iterated on paper maps for tutorial level</li>
-							<li>Implemented level in Unity using assets created by artists</li>
-							<li>Designed a tutorial experience to introduce players to the majority of the game’s mechanics in an intuitive manner</li>
-						</ul>
-						<li>Mixed the in-game audio</li>
-						<li>Contributed to the design of the boss battle & the boss’s mechanics through brainstorming sessions and playtesting feedback</li>
-					  </ul>
-					</div>
-				  </div>
-				</div>
-			
-			<hr class="portfolio-divider">
-			<div class="container section-container pb-1">
-				<h3 class="text-center" >My Work</h3>
-				<div class="row">
-					<div class="col-12 col-md-2"></div>
-<!--
-					<div class="col-12 col-md-8">
-						<ul class="nav nav-tabs">
-							<li class="active">
-								<a class="" onclick="return VoyageScriptingButtonClick()">C# Programming</a>
-							</li>
-							<li class="">
-								<a class="" onclick="return VoyageLevelButtonClick()">Level Design</a>
-							</li>
-							<li class="nav-item">
-								<button id="scripting-button" class="default-btn-active" onclick="VoyageScriptingButtonClick()">Scripting</button>
-							</li>
-							<li class="nav-item">
-								<button id="ld-button" class="default-btn" onclick="VoyageLevelButtonClick()">Level Design</button>
-							</li>
-						</ul>
-					</div>
--->
-					<div class="col-12 col-md-4 text-center">
-						<button id="scripting-button" class="default-btn-active" onclick="VoyageScriptingButtonClick()">Scripting</button>
-					</div>
-					<div class="col-12 col-md-4 text-center">
-						<button id="ld-button" class="default-btn" onclick="VoyageLevelButtonClick()">Level Design</button>
-					</div>
-				</div>
 
-				<!-- SCRIPTING WORK -->
-				<div class="container" id="voyage-scripting">
-					<div class="row mt-4">
-						<div class="col-12 col-md-5">
-							<h5>Audio Systems</h5>
-							<div class="row ml-0 mr-0">
-								<p class="mt-2">For Voyage, my audio responsibilities include editing and implementing sound effects. This required me to program triggers for sound effects in the game's other C# scripts.</p>
-								<p class="mt-1">I created audio controller scripts for game objects such as the sailor boat, the sailors, the chasing ghost ship, and the boss ship that had more extensive audio needs than just a one off sounds played on death or impact. </p>
+					<hr class="portfolio-divider" id="Screenshots">
+					<div class="container section-container pb-3 ml-2 mr-2" >
+						  <h3 class="text-center">Screenshots</h3>
+							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+							  </ol>
+							  <div class="carousel-inner" >
+								<div class="carousel-item active">
+								  <img class="d-block w-100" style="" src="images/Portfolio/Voyage/Marketing/MarketingScreenshot_01.jpg" alt="">
+								</div>
+								<div class="carousel-item">
+								  <img class="d-block w-100" style="" src="images/Portfolio/Voyage/Marketing/Marketing_Screenshot02.jpg" alt="">
+								</div>
+								<div class="carousel-item">
+								  <img class="d-block w-100" style="" src="images/Portfolio/Voyage/Marketing/Marketing_Screenshot_03.png" alt="">
+								</div>
+								<div class="carousel-item">
+								  <img class="d-block w-100" style="" src="images/Portfolio/Voyage/Marketing/Marketing_Screenshot_04.png" alt="">
+								</div>
+								<div class="carousel-item">
+								  <img class="d-block w-100" style="" src="images/Portfolio/Voyage/Marketing/Marketing_Screenshot_05.png" alt="">
+								</div>
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
 							</div>
 						</div>
-						<div class="col-12 col-md-7">
-						  <figure>
-							<img class="img-fluid" src="images/Portfolio/Voyage/Audio Source Table.png" alt="">
-							<figcaption class="text-center font-italic" style="font-size: 12px">table of sfx with values for unity audio mix</figcaption>
-						  </figure>
+					
+					<hr class="portfolio-divider"  id="RolesResponsibilities">
+					<div class="container section-container">
+						<h3 class="text-center" >Roles & Responsibilities</h3>
+						<div class="row mt-2">
+							<div class="col-12 col-md-6">
+							  <h5 class="text-center">C# Programmer</h5>
+							  <ul>
+								<li>Scripted Audio Settings functionality which allowed players to mute both music and sound effects separately</li>
+								<li>Implemented Pause Menu assets and scripted their functionality</li>
+								<li>Implemented Credits Screen assets and scripted the functionality for scrolling credits</li>
+								<li>Implemented sound effects</li>
+								<li>Implemented sprite animations for ghost sailors and enemy deaths</li>
+							  </ul>
+							</div>
+							<div class="col-12 col-md-6">
+							  <h5 class="text-center">Level Designer</h5>
+							  <ul>
+								<li>Designed & Implemented the Tutorial Level</li>
+								<ul>
+									<li>Designed & iterated on paper maps for tutorial level</li>
+									<li>Implemented level in Unity using assets created by artists</li>
+									<li>Designed a tutorial experience to introduce players to the majority of the game’s mechanics in an intuitive manner</li>
+								</ul>
+								<li>Mixed the in-game audio</li>
+								<li>Contributed to the design of the boss battle & the boss’s mechanics through brainstorming sessions and playtesting feedback</li>
+							  </ul>
+							</div>
+						  </div>
 						</div>
-					</div>
 
-					<p>I also mixed the audio using Unity's audio mixer and implemented functionality that allowed the player to mute both music and sound effects separately from the settings menu.</p>
+					<hr class="portfolio-divider" id="ProgrammingWork">
+					<div class="container section-container pb-1">
+						<h3 class="text-center" >Programming Work</h3>
 
-					<div class="row mb-4">
-						<div class="col-12 col-md-6">
-							<figure>
-								<img class="img-fluid" src="images/Portfolio/Voyage/AudioSettings_CodeSnippet_01.png" alt="">
-								<figcaption class="text-center font-italic" style="font-size: 12px">code excerpt of audio settings script pt. 1</figcaption>
-							</figure>
-						</div>
-						<div class="col-12 col-md-6">
-							<figure>
-								<img class="img-fluid mt-2" src="images/Portfolio/Voyage/AudioSettings_CodeSnippet_02.png" alt="">
-								<figcaption class="text-center font-italic" style="font-size: 12px">code excerpt of audio settings script pt. 2</figcaption>
-							</figure>
-							<figure>
-								<img class="img-fluid mt-2" src="images/Portfolio/Voyage/AudioMixerPNG.png" alt="">
-								<figcaption class="text-center font-italic" style="font-size: 12px">audio mixer with different stems in Unity</figcaption>
-							</figure>
-						</div>
-					</div>
-				</div>
+						<!-- SCRIPTING WORK -->
+						<div class="container" id="voyage-scripting">
+							<div class="row mt-4">
+								<div class="col-12 col-md-6">
+									<h5>Audio Systems</h5>
+									<div class="row ml-0 mr-0">
+										<p class="mt-2">For <i>Voyage</i>, my audio responsibilities include editing and implementing sound effects. This required me to program triggers for sound effects in the game's other C# scripts.</p>
+										<p class="mt-1">I created audio controller scripts for game objects such as the sailor boat, the sailors, the chasing ghost ship, and the boss ship that had more extensive audio needs than just a one off sounds played on death or impact. </p>
+									</div>
+								</div>
+								<div class="col-12 col-md-6">
+								  <figure>
+									<img class="img-fluid" src="images/Portfolio/Voyage/Audio Source Table.png" alt="">
+									<figcaption class="text-center font-italic">table of sfx with values for unity audio mix</figcaption>
+								  </figure>
+								</div>
+							</div>
 
-				<!-- LD WORK -->
-				<div class="container mb-4" id="voyage-leveldesign">
-					<div class="row mt-4">
-						<div class="col-12 col-md-5">
-							<h5>The Tutorial Level</h5>
-							<div class="row ml-0 mr-0">
-								<p class="mt-2">The goal of this level was to create a tutorial level to introduce the player to the majority of the game's mechanics in an intuitive manner. Those mechanics included shooting gems to collect them, catching sailors by cutting their rope with the harpoon gun, killing enemies (both by shooting them directly and with falling stalagmites), and outrunning the chasing ghost ship. </p>
+							<p>I also mixed the audio using Unity's audio mixer and implemented functionality that allowed the player to mute both music and sound effects separately from the settings menu.</p>
+
+							<div class="row mb-4">
+								<div class="col-12 col-md-6">
+									<figure>
+										<img class="img-fluid" src="images/Portfolio/Voyage/AudioSettings_CodeSnippet_01.png" alt="">
+										<figcaption class="text-center font-italic">code excerpt of audio settings script pt. 1</figcaption>
+									</figure>
+								</div>
+								<div class="col-12 col-md-6">
+									<figure>
+										<img class="img-fluid mt-2" src="images/Portfolio/Voyage/AudioSettings_CodeSnippet_02.png" alt="">
+										<figcaption class="text-center font-italic">code excerpt of audio settings script pt. 2</figcaption>
+									</figure>
+									<figure>
+										<img class="img-fluid mt-2" src="images/Portfolio/Voyage/AudioMixerPNG.png" alt="">
+										<figcaption class="text-center font-italic">audio mixer with different stems in Unity</figcaption>
+									</figure>
+								</div>
 							</div>
 						</div>
-						<div class="col-12 col-md-7">
-						  <figure>
-							<img class="img-fluid" src="images/Portfolio/Voyage/Tutorial_PaperMap.png" alt="">
-							<figcaption class="text-center font-italic" style="font-size: 12px">original paper map</figcaption>
-						  </figure>
+
+					</div>
+					
+					<hr class="portfolio-divider" id="LDWork">
+					<div class="container section-container pb-1">
+						<h3 class="text-center" >Level Design Work</h3>
+
+						<!-- LD WORK -->
+						<div class="container mb-4" id="voyage-leveldesign">
+							<div class="row mt-4">
+								<div class="col-12 col-md-5">
+									<h5>The Tutorial Level</h5>
+									<div class="row ml-0 mr-0">
+										<p class="mt-2">The goal of this level was to create a tutorial level to introduce the player to the majority of the game's mechanics in an intuitive manner. Those mechanics included shooting gems to collect them, catching sailors by cutting their rope with the harpoon gun, killing enemies (both by shooting them directly and with falling stalagmites), and outrunning the chasing ghost ship. </p>
+									</div>
+								</div>
+								<div class="col-12 col-md-7" style="padding-left:10%">
+								  <figure>
+									<img class="img-fluid" src="images/Portfolio/Voyage/Tutorial_PaperMap.png" alt="">
+									<figcaption class="text-center font-italic" style="padding-right: 18%">original paper map</figcaption>
+								  </figure>
+								</div>
+							</div>
+
+							<p>The first section consists of stalagmites with gems contained within to get the player used to collecting gems and show they that they can also be damaged by the stalagmites.</p>
+
+							<div class="row">
+								<div class="col-12 col-md-2"></div>
+								<figure style="padding-left: 4%">
+									<img class="img-fluid" src="images/Portfolio/Voyage/TutSection01.png" alt="">
+									<figcaption class="text-center font-italic" style="">level section 1</figcaption>
+								</figure>
+							</div>
+
+							<p class="mt-2">The section with the horizontal platform contains stalagmites that fall when the player gets close. These stalagmites get blocked by the platforms (so they don't hurt the player) but the player must adjust their speed to speed up and slow down to catch the subsequently falling gems.</p>
+
+							<div class="row">
+								<div class="col-12 col-md-2"></div>
+								<div class="col-12 col-md-8">
+									<figure style="padding-left: 5%">
+										<img class="img-fluid" src="images/Portfolio/Voyage/TutSection02.png" alt="">
+										<figcaption class="text-center font-italic" style="">level section 2</figcaption>
+								  	</figure>	
+								</div>
+							</div>
+
+							<p class="mt-2">The next section allows the player to get used to catching sailors without any danger. And the subsequent section is all about killing bats, both directly and with falling stalagmites.</p>
+							<div class="row">
+								<div class="col-12 col-md-2"></div>
+								<div class="col-12 col-md-8">
+									<div id="section3Indicators" class="carousel slide" data-ride="carousel">
+									  <ol class="carousel-indicators">
+										<li data-target="#section3Indicators" data-slide-to="0" class="active"></li>
+										<li data-target="#section3Indicators" data-slide-to="1"></li>
+									  </ol>
+									  <div class="carousel-inner" >
+										<div class="carousel-item active">
+										  <img class="d-block w-100" style="" src="images/Portfolio/Voyage/TutSection03.png" alt="">
+											<div class="carousel-caption">
+												<p><i>level section 3 pt. 1</i></p>
+										  	</div>
+										</div>
+										<div class="carousel-item">
+										  <img class="d-block w-100" style="" src="images/Portfolio/Voyage/TutSection04.png" alt="">
+											<div class="carousel-caption">
+												<p><i>level section 3 pt. 2</i></p>
+										  	</div>
+										</div>
+									  </div>
+									  <a class="carousel-control-prev" href="#section3Indicators" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									  </a>
+									  <a class="carousel-control-next" href="#section3Indicators" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									  </a>
+									</div>
+								</div>
+							</div>
+
+							<p class="mt-2">At the end of these tutorial sections, the chasing ghost ship makes its first appearance and the level then opens up to include all of those mechanics together, getting the player used to balancing their responsibilities.</p>
+							
+							<div class="row">
+								<div class="col-12 col-md-2"></div>
+								<div class="col-12 col-md-8">
+									<div id="section4Indicators" class="carousel slide" data-ride="carousel">
+									  <ol class="carousel-indicators">
+										<li data-target="#section4Indicators" data-slide-to="0" class="active"></li>
+										<li data-target="#section4Indicators" data-slide-to="1"></li>
+										<li data-target="#section4Indicators" data-slide-to="2"></li>
+										<li data-target="#section4Indicators" data-slide-to="3"></li>
+									  </ol>
+									  <div class="carousel-inner" >
+										<div class="carousel-item active">
+										  <img class="d-block w-100" style="" src="images/Portfolio/Voyage/TutSection05_01.png" alt="">
+											<div class="carousel-caption">
+												<p><i>level section 4 pt. 1</i></p>
+										  	</div>
+										</div>
+										<div class="carousel-item">
+										  <img class="d-block w-100" style="" src="images/Portfolio/Voyage/TutSection05_02.png" alt="">
+											<div class="carousel-caption">
+												<p><i>level section 4 pt. 2</i></p>
+										  	</div>
+										</div>
+									  	<div class="carousel-item">
+										  <img class="d-block w-100" style="" src="images/Portfolio/Voyage/TutSection05_03.png" alt="">
+											<div class="carousel-caption">
+												<p><i>level section 4 pt. 3</i></p>
+										  	</div>
+										</div>
+									  	<div class="carousel-item">
+										  <img class="d-block w-100" style="" src="images/Portfolio/Voyage/TutSection05_04.png" alt="">
+											<div class="carousel-caption">
+												<p><i>level section 4 pt. 4</i></p>
+										  	</div>
+										</div>
+									  </div>
+									  <a class="carousel-control-prev" href="#section4Indicators" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									  </a>
+									  <a class="carousel-control-next" href="#section4Indicators" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									  </a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<hr class="portfolio-divider" id="PostMortem">
+					<div class="container section-container pb-1">
+						<h3 class="text-center">Post Mortem</h3>
+						<div class="container">
+							<div class="row mt-4">
+								<div class="col-12 col-md-12">
+									<div class="row ml-0 mr-0">
+										<h6>What Went Well</h6>
+										<ul>
+											<li>
+												Ability to communicate with team members: everyone was open to having discussions and I felt comfortable being able to voice an opinion that might've been different from the group consensus
+											</li>
+											<li>
+												All my team members were very competent in their individual disciplines, so when I was onboarded to the team, everything was already progressing pretty well and it was easy to jump in and immediately start contributing
+											</li>
+											<li>
+												We were able to hit all of our milestone deliverables
+											</li>
+										</ul>
+									</div>
+
+									<div class="row ml-0 mr-0">
+										<h6>What Went Wrong</h6>
+										<ul>
+											<li>
+												Accurately tracking hours for scrum board tasks: frequently we came to end of milestones and would find that we were missing or over on hours
+											</li>
+											<li>
+												 Daily Scrum Buy-In: There were some days where some team members felt the process wasn't beneficial for just a small team of 5
+											</li>
+											<li>
+												Sometimes it was hard to come to a consensus on what to do when we were getting conflicting playtester feedback about the game’s difficulty
+											</li>
+										</ul>
+									</div>
+
+									<div class="row ml-0 mr-0">
+										<h6>What I Learned</h6>
+										<ul>
+											<li>
+												Improved team communication and work skills
+												<ul>
+													<li>
+														Learned when and how to concede and compromise on design decisions
+													</li>
+													<li>
+														Learned how to speak up with conflicting opinions and have productive discussions
+													</li>
+												</ul>
+											</li>
+											<li>
+												 I became very comfortable using perforce and learned how to use it on a team project without creating merge conflicts
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 
-					<p>The first section consists of stalagmites with gems contained within to get the player used to collecting gems and show they that they can also be damaged by the stalagmites.</p>
-
-					<div class="row">
-						<div class="col-12 col-md-2"></div>
-						<img class="img-fluid" src="images/Portfolio/Voyage/TutSection01.png" alt="">
-					</div>
-
-					<p class="mt-2">The section with the horizontal platform contains stalagmites that fall when the player gets close. These stalagmites get blocked by the platforms (so they don't hurt the player) but the player must adjust their speed to speed up and slow down to catch the subsequently falling gems.</p>
-
-					<div class="row">
-						<div class="col-12 col-md-2"></div>
-						<img class="img-fluid" src="images/Portfolio/Voyage/TutSection02.png" alt="">
-					</div>
-
-					<p class="mt-2">The next section allows the player to get used to catching sailors without any danger. And the subsequent section is all about killing bats, both directly and with falling stalagmites.</p>
-
-					<div class="row">
-						<div class="col-12 col-md-2"></div>
-						<img class="img-fluid" src="images/Portfolio/Voyage/TutSection03.png" alt="">
-					</div>
-
-					<div class="row">
-						<div class="col-12 col-md-2"></div>
-						<img class="img-fluid mt-2" src="images/Portfolio/Voyage/TutSection04.png" alt="">
-					</div>
-
-					<p class="mt-2">At the end of these tutorial sections, the chasing ghost ship makes its first appearance and the level then opens up to include all of those mechanics together, getting the player used to balancing their responsibilities.</p>
-
-					<div class="row">
-						<div class="col-12 col-md-6">
-							<img class="img-fluid mt-2" src="images/Portfolio/Voyage/TutSection05_01.png" alt="">
-							<img class="img-fluid mt-2" src="images/Portfolio/Voyage/TutSection05_02.png" alt="">
-						</div>
-						<div class="col-12 col-md-6">
-							<img class="img-fluid mt-2" src="images/Portfolio/Voyage/TutSection05_03.png" alt="">
-							<img class="img-fluid mt-2" src="images/Portfolio/Voyage/TutSection05_04.png" alt="">
-						</div>
-					</div>
 				</div>
+				<!-- END GAME CONTENT -->
 			</div>
-
-	  	</div>
-		<!-- END GAME CONTENT -->
-		  
-		  
-	  	<div class="col-12 col-md-2"></div>
-	  </div>
-  </div>
+		</div>
+		
+		<div class="col-12 col-md-2" style ="position:-webkit-sticky; position: sticky; top: 25%">
+			<nav class="mr-5" id="VoyageScrollSpy">
+				<ul class="nav nav-pills flex-column">
+			  		<li class="nav-item">
+						<a class="nav-link active" href="#ProjectOverview">Project Overview</a>
+					</li>
+			  		<li class="nav-item">
+						<a class="nav-link" href="#Screenshots">Screenshots</a>
+					</li>
+					<li class="nav-item">
+				  		<a class="nav-link" href="#RolesResponsibilities">Roles & Responsibilities</a>
+					</li>
+					<li class="nav-item">
+				  		<a class="nav-link" href="#ProgrammingWork">Programming Work</a>
+					</li>
+					<li class="nav-item">
+				  		<a class="nav-link" href="#LDWork">Level Design Work</a>
+					</li>
+					<li class="nav-item">
+				  		<a class="nav-link" href="#PostMortem">Post Mortem</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
 </section>
-<!--<section class="mt-4" style="padding-bottom: 50px"> </section>-->
-<footer class="text-center" style="background-color: #272727; height: 50px; margin-top: -50px">
+	  
+<footer style="height: 50px; margin-top: -50px">
   <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p class="mt-2" style="color: #7A7A7A; font-family: Junicode;">Copyright © Taylor Roseberry 2019</p>
-          </div>
-        </div>
-      </div>
-  </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<div class="row">
+	  <div class="col-12">
+		<p class="mt-2" style="color: #7A7A7A; font-family: Junicode;">Copyright © Taylor Roseberry 2019</p>
+	  </div>
+	</div>
+  </div>
+</footer>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/popper.min.js"></script>
